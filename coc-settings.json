@@ -1,0 +1,15 @@
+{
+  "esling.enable": true,
+  "eslint.fixOnSaveTimeout": 1000,
+  "eslint.packageManager": "yarn",
+  "eslint.run": "onType",
+  "eslint.autoFixOnSave": true,
+  "coc.preferences.formatOnSaveFiletypes": ["*"],
+  "languageserver": {
+    "csharp-ls": {
+      "command": "csharp-ls",
+      "filetypes": ["cs"],
+      "rootPatterns": ["*.csproj", ".vim/", ".git/", ".hg/"]
+    }
+  }
+}
