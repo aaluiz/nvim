@@ -1,9 +1,8 @@
-local status, dapui = pcall(require, "dapui")
-if (not status) then return end
-
-
-dapui.setup({
-   icons = { expanded = "▾", collapsed = "▸", current_frame = "▸" },
+--[[
+--
+--
+require("dapui").setup({
+  icons = { expanded = "▾", collapsed = "▸", current_frame = "▸" },
   mappings = {
     -- Use a table to apply multiple mappings
     expand = { "<CR>", "<2-LeftMouse>" },
@@ -26,7 +25,7 @@ dapui.setup({
   layouts = {
     {
       elements = {
-      -- Elements can be strings or table with id and size keys.
+        -- Elements can be strings or table with id and size keys.
         { id = "scopes", size = 0.25 },
         "breakpoints",
         "stacks",
@@ -74,3 +73,6 @@ dapui.setup({
     max_value_lines = 100, -- Can be integer or nil.
   }
 })
+--
+--
+--]]

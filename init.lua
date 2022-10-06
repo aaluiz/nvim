@@ -18,11 +18,6 @@ if is_win then
   require('window')
 end
 
-
-
-
-
-
 -- Use Color Scheme
 vim.cmd [[colorscheme dracula]]
 
@@ -68,6 +63,3 @@ end
 dap.listeners.before.event_exited["dapui_config"] = function()
   dapui.close()
 end
-
-
-return M
