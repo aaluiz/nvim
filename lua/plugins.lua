@@ -34,7 +34,6 @@ packer.startup(function(use)
   use 'windwp/nvim-ts-autotag'
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-file-browser.nvim'
-  use { 'kkharji/lspsaga.nvim' } -- nightly
   use 'lewis6991/gitsigns.nvim'
   use {
     'tanvirtin/vgit.nvim',
@@ -49,6 +48,8 @@ packer.startup(function(use)
   use 'mfussenegger/nvim-dap-python'
   use 'nvim-telescope/telescope-dap.nvim'
   use 'jbyuki/one-small-step-for-vimkind'
-  use 'sbdchd/neoformat' 
-
+  use 'sbdchd/neoformat'
+  use 'glepnir/lspsaga.nvim'
+  use 'SirVer/ultisnips'
+  use 'mlaursen/vim-react-snippets'
 end)
