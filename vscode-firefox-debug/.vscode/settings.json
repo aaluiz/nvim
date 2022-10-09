@@ -1,0 +1,13 @@
+{
+	"editor.insertSpaces": false,
+	"files.exclude": {
+		".git": true,
+		"node_modules": true,
+		".nyc_output": true,
+		"coverage": true
+	},
+	"editor.rulers": [100],
+	"typescript.tsdk": "./node_modules/typescript/lib",
+	"mochaExplorer.envPath": "src/test/.env",
+	"editor.tabSize": 4
+}

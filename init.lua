@@ -22,7 +22,6 @@ end
 vim.cmd [[colorscheme dracula]]
 
 --Dap dapui_config
-
 local dap_breakpoint = {
   error = {
     text = "🟥",
@@ -48,10 +47,6 @@ vim.fn.sign_define("DapBreakpoint", dap_breakpoint.error)
 vim.fn.sign_define("DapStopped", dap_breakpoint.stopped)
 vim.fn.sign_define("DapBreakpointRejected", dap_breakpoint.rejected)
 
-require("nvim-dap-virtual-text").setup {
-  commented = true,
-}
-
 local dap, dapui = require "dap", require "dapui"
 dapui.setup {} -- use default
 dap.listeners.after.event_initialized["dapui_config"] = function()
@@ -63,3 +58,6 @@ end
 dap.listeners.before.event_exited["dapui_config"] = function()
   dapui.close()
 end
+
+
+return M

@@ -41,15 +41,18 @@ packer.startup(function(use)
       'nvim-lua/plenary.nvim'
     }
   }
-  use 'mfussenegger/nvim-dap'
-  use 'alpha2phi/DAPInstall.nvim'
   use 'theHamsta/nvim-dap-virtual-text'
   use 'rcarriga/nvim-dap-ui'
-  use 'mfussenegger/nvim-dap-python'
   use 'nvim-telescope/telescope-dap.nvim'
   use 'jbyuki/one-small-step-for-vimkind'
   use 'sbdchd/neoformat'
   use 'glepnir/lspsaga.nvim'
   use 'SirVer/ultisnips'
   use 'mlaursen/vim-react-snippets'
+  -- Debugging
+  use 'mfussenegger/nvim-dap'
+  use 'folke/which-key.nvim'
+  use 'Pocco81/DAPInstall.nvim'
+  use 'mfussenegger/nvim-dap-python'
+  use 'leoluz/nvim-dap-go'
 end)

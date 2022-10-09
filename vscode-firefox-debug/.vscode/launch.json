@@ -1,0 +1,47 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"type": "pwa-node",
+			"request": "launch",
+			"name": "debug server",
+			"program": "${workspaceFolder}/dist/adapter.bundle.js",
+			"args": [ "--server=4711" ],
+			"cwd": "${workspaceFolder}",
+			"sourceMaps": true
+		},
+		{
+			"type": "pwa-extensionHost",
+			"request": "launch",
+			"name": "extension host",
+			"args": [
+				"--extensionDevelopmentPath=${workspaceFolder}"
+			],
+			"sourceMaps": true
+		},
+		{
+			"type": "firefox",
+			"request": "launch",
+			"name": "web test",
+			"debugServer": 4711,
+			"file": "${workspaceFolder}/testdata/web/index.html"
+		},
+		{
+			"type": "firefox",
+			"request": "launch",
+			"name": "webextension test",
+			"debugServer": 4711,
+			"addonPath": "${workspaceFolder}/testdata/webExtension/addOn",
+			"file": "${workspaceFolder}/testdata/webExtension/index.html"
+		}
+	],
+	"compounds": [
+		{
+			"name": "server & extension",
+			"configurations": [
+				"debug server",
+				"extension host"
+			]
+		}
+	]
+}

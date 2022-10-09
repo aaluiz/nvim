@@ -54,7 +54,6 @@ keymap.set('n', 'gk', "<cmd>Lspsaga diagnostic_jump_prev<cr>", { silent = true, 
 keymap.set('n', '<C-u>', "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1, '<c-u>')<cr>", {})
 keymap.set('n', '<C-d>', "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1, '<c-d>')<cr>", {})
 keymap.set('n', "gd", "<cmd>Lspsaga peek_definition<CR>", { silent = true })
-
 -- Debug
 keymap.set('n', 'db', ":lua require'dap'.toggle_breakpoint()<cr>", { silent = true })
 keymap.set('n', '<F5>', ":lua require'dap'.continue()<cr>", { silent = true })
