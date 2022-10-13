@@ -55,4 +55,5 @@ packer.startup(function(use)
   use 'Pocco81/DAPInstall.nvim'
   use 'mfussenegger/nvim-dap-python'
   use 'leoluz/nvim-dap-go'
+  use 'github/copilot.vim'
 end)

@@ -11,7 +11,7 @@ keymap.set('n', '-', '<C-x>')
 keymap.set('n', 'dw', 'vb"_d')
 
 -- Select all
-keymap.set('n', '<C-a>', 'gg<S-v>G')
+keymap.set('n', '<C-s>', 'gg<S-v>G')
 
 -- New tab
 keymap.set('n', 'te', ':tabedit<Return>', { silent = true })
@@ -54,8 +54,10 @@ keymap.set('n', 'gk', "<cmd>Lspsaga diagnostic_jump_prev<cr>", { silent = true, 
 keymap.set('n', '<C-u>', "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1, '<c-u>')<cr>", {})
 keymap.set('n', '<C-d>', "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1, '<c-d>')<cr>", {})
 keymap.set('n', "gd", "<cmd>Lspsaga peek_definition<CR>", { silent = true })
+
 -- Debug
 keymap.set('n', 'db', ":lua require'dap'.toggle_breakpoint()<cr>", { silent = true })
 keymap.set('n', '<F5>', ":lua require'dap'.continue()<cr>", { silent = true })
 keymap.set('n', '<F10>', ":lua require'dap'.step_over()<cr>", { silent = true })
 keymap.set('n', '<F11>', ":lua require'dap'.step_into()<cr>", { silent = true })
+keymap.set('n', '<F4>', ":lua require'dap'.terminate()<cr>", { silent = true })
