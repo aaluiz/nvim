@@ -24,21 +24,25 @@ vim.opt.shiftwidth = 2
 vim.opt.tabstop = 2
 vim.opt.ai = true -- Auto indent
 vim.opt.si = true -- Smart indent
-vim.opt.wrap = false -- No wrap
+vim.opt.wrap = true -- No wrap
 vim.opt.backspace = 'start,eol,indent'
 vim.opt.path:append { '**' } -- Finding files - Search down into subfolders
 vim.opt.wildignore:append { '*/node_modules/*' }
-
-
+--set linebreak -- Break long lines
+vim.opt.showbreak = '↪ '
+vim.opt.linebreak = true
 -- Undercurl
 vim.cmd([[let &t_Cs = "\e[4:3m]"]])
 vim.cmd([[let &t_Ce = "\e[4:3m]"]])
+
+-- set breakindentopt=sbr
+vim.opt.breakindentopt = 'sbr'
 -- but this doen't work on iTerm2.
 
 -- Torn off paste mode when leaving insert
 vim.api.nvim_create_autocmd("InsertLeave", {
-        pattern = '*', 
-        command = "set nopaste"
+  pattern = '*',
+  command = "set nopaste"
 })
 
 -- Add asterisk in block comments
