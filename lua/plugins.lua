@@ -59,5 +59,10 @@ packer.startup(function(use)
   use 'Pocco81/DAPInstall.nvim'
   use 'mfussenegger/nvim-dap-python'
   use 'leoluz/nvim-dap-go'
+  -- Copilot
   use 'github/copilot.vim'
+  -- NerdTree
+  use 'preservim/nerdtree'
+  -- Vim devicons
+  use 'ryanoasis/vim-devicons'
 end)

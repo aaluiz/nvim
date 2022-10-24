@@ -144,6 +144,11 @@ _G.packer_plugins = {
     path = "/home/aaluiz/.local/share/nvim/site/pack/packer/start/neoformat",
     url = "https://github.com/sbdchd/neoformat"
   },
+  nerdtree = {
+    loaded = true,
+    path = "/home/aaluiz/.local/share/nvim/site/pack/packer/start/nerdtree",
+    url = "https://github.com/preservim/nerdtree"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/home/aaluiz/.local/share/nvim/site/pack/packer/start/nvim-autopairs",
@@ -258,6 +263,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/aaluiz/.local/share/nvim/site/pack/packer/start/vgit.nvim",
     url = "https://github.com/tanvirtin/vgit.nvim"
+  },
+  ["vim-devicons"] = {
+    loaded = true,
+    path = "/home/aaluiz/.local/share/nvim/site/pack/packer/start/vim-devicons",
+    url = "https://github.com/ryanoasis/vim-devicons"
   },
   ["vim-react-snippets"] = {
     loaded = true,
