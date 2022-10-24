@@ -50,6 +50,9 @@ packer.startup(function(use)
   use 'mlaursen/vim-react-snippets'
   use 'glepnir/lspsaga.nvim'
   use 'kabouzeid/nvim-lspinstall'
+  use {
+    "williamboman/nvim-lsp-installer",
+  }
   -- Debugging
   use 'mfussenegger/nvim-dap'
   use 'folke/which-key.nvim'
