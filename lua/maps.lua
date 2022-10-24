@@ -1,17 +1,27 @@
 local keymap = vim.keymap
 
+-- leader key space 
+vim.g.mapleader = ' '
+-- search term in all files  :nnoremap <leader>g :grep -R <cword> .<cr>
+keymap.set('n', '<leader>g', ':grep -R <cword> .<cr>')
 -- Do not yank with x
 keymap.set('n', 'x', '"_x')
 
 -- Increment/decrement
-keymap.set('n', '+', '<C-a>')
-keymap.set('n', '-', '<C-x>')
+-- keymap.set('n', '+', '<C-a>')
+-- keymap.set('n', '-', '<C-x>')
 
 -- Delete a work backwards
 keymap.set('n', 'dw', 'vb"_d')
 
--- Select all
-keymap.set('n', '<C-s>', 'gg<S-v>G')
+-- Save current file
+keymap.set('n', '<C-s>', ':w<CR>')
+
+-- Save all files
+keymap.set('n', '<C-S>', ':wa<CR>')
+
+-- Select all text
+keymap.set('n', '<C-a>', 'gg<S-v>G')
 
 -- New tab
 keymap.set('n', 'te', ':tabedit<Return>', { silent = true })
@@ -51,6 +61,7 @@ keymap.set('n', 'K', "<cmd>Lspsaga hover_doc<cr>", { silent = true, noremap = tr
 keymap.set('n', 'go', "<cmd>Lspsaga show_line_diagnostics<cr>", { silent = true, noremap = true })
 keymap.set('n', 'gj', "<cmd>Lspsaga diagnostic_jump_next<cr>", { silent = true, noremap = true })
 keymap.set('n', 'gk', "<cmd>Lspsaga diagnostic_jump_prev<cr>", { silent = true, noremap = true })
+keymap.set('n', 'gf', "<cmd>Lspsaga lsp_finder<cr>", { silent = true, noremap = true })
 keymap.set('n', '<C-u>', "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1, '<c-u>')<cr>", {})
 keymap.set('n', '<C-d>', "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1, '<c-d>')<cr>", {})
 keymap.set('n', "gd", "<cmd>Lspsaga peek_definition<CR>", { silent = true })

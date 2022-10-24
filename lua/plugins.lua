@@ -46,9 +46,10 @@ packer.startup(function(use)
   use 'nvim-telescope/telescope-dap.nvim'
   use 'jbyuki/one-small-step-for-vimkind'
   use 'sbdchd/neoformat'
-  use 'glepnir/lspsaga.nvim'
   use 'SirVer/ultisnips'
   use 'mlaursen/vim-react-snippets'
+  use 'glepnir/lspsaga.nvim'
+  use 'kabouzeid/nvim-lspinstall'
   -- Debugging
   use 'mfussenegger/nvim-dap'
   use 'folke/which-key.nvim'

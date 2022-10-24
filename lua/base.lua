@@ -47,3 +47,11 @@ vim.api.nvim_create_autocmd("InsertLeave", {
 
 -- Add asterisk in block comments
 vim.opt.formatoptions:append { 'r' }
+-- set font size 16
+vim.cmd([[set guifont=JetBrains\ Mono\ Nerd\ Font:h16]])
+
+-- refresh editor settings without restarting
+vim.cmd([[autocmd BufWritePost plugins.lua source <afile> | PackerCompile]])
+
+-- sintax highlight on
+vim.cmd([[syntax on]])

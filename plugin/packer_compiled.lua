@@ -77,7 +77,7 @@ _G.packer_plugins = {
   ["DAPInstall.nvim"] = {
     loaded = true,
     path = "/Users/aaluiz/.local/share/nvim/site/pack/packer/start/DAPInstall.nvim",
-    url = "https://github.com/alpha2phi/DAPInstall.nvim"
+    url = "https://github.com/Pocco81/DAPInstall.nvim"
   },
   LuaSnip = {
     loaded = true,
@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "/Users/aaluiz/.local/share/nvim/site/pack/packer/start/coc.nvim",
     url = "https://github.com/neoclide/coc.nvim"
   },
+  ["copilot.vim"] = {
+    loaded = true,
+    path = "/Users/aaluiz/.local/share/nvim/site/pack/packer/start/copilot.vim",
+    url = "https://github.com/github/copilot.vim"
+  },
   ["dracula.nvim"] = {
     loaded = true,
     path = "/Users/aaluiz/.local/share/nvim/site/pack/packer/start/dracula.nvim",
@@ -117,7 +122,7 @@ _G.packer_plugins = {
   ["lspsaga.nvim"] = {
     loaded = true,
     path = "/Users/aaluiz/.local/share/nvim/site/pack/packer/start/lspsaga.nvim",
-    url = "https://github.com/kkharji/lspsaga.nvim"
+    url = "https://github.com/glepnir/lspsaga.nvim"
   },
   ["lualine.nvim"] = {
     loaded = true,
@@ -164,6 +169,11 @@ _G.packer_plugins = {
     path = "/Users/aaluiz/.local/share/nvim/site/pack/packer/start/nvim-dap",
     url = "https://github.com/mfussenegger/nvim-dap"
   },
+  ["nvim-dap-go"] = {
+    loaded = true,
+    path = "/Users/aaluiz/.local/share/nvim/site/pack/packer/start/nvim-dap-go",
+    url = "https://github.com/leoluz/nvim-dap-go"
+  },
   ["nvim-dap-python"] = {
     loaded = true,
     path = "/Users/aaluiz/.local/share/nvim/site/pack/packer/start/nvim-dap-python",
@@ -183,6 +193,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/Users/aaluiz/.local/share/nvim/site/pack/packer/start/nvim-lspconfig",
     url = "https://github.com/neovim/nvim-lspconfig"
+  },
+  ["nvim-lspinstall"] = {
+    loaded = true,
+    path = "/Users/aaluiz/.local/share/nvim/site/pack/packer/start/nvim-lspinstall",
+    url = "https://github.com/kabouzeid/nvim-lspinstall"
   },
   ["nvim-treesitter"] = {
     loaded = true,
@@ -229,10 +244,25 @@ _G.packer_plugins = {
     path = "/Users/aaluiz/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ultisnips = {
+    loaded = true,
+    path = "/Users/aaluiz/.local/share/nvim/site/pack/packer/start/ultisnips",
+    url = "https://github.com/SirVer/ultisnips"
+  },
   ["vgit.nvim"] = {
     loaded = true,
     path = "/Users/aaluiz/.local/share/nvim/site/pack/packer/start/vgit.nvim",
     url = "https://github.com/tanvirtin/vgit.nvim"
+  },
+  ["vim-react-snippets"] = {
+    loaded = true,
+    path = "/Users/aaluiz/.local/share/nvim/site/pack/packer/start/vim-react-snippets",
+    url = "https://github.com/mlaursen/vim-react-snippets"
+  },
+  ["which-key.nvim"] = {
+    loaded = true,
+    path = "/Users/aaluiz/.local/share/nvim/site/pack/packer/start/which-key.nvim",
+    url = "https://github.com/folke/which-key.nvim"
   }
 }
 
