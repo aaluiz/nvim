@@ -144,6 +144,11 @@ _G.packer_plugins = {
     path = "/Users/aaluiz/.local/share/nvim/site/pack/packer/start/neoformat",
     url = "https://github.com/sbdchd/neoformat"
   },
+  nerdtree = {
+    loaded = true,
+    path = "/Users/aaluiz/.local/share/nvim/site/pack/packer/start/nerdtree",
+    url = "https://github.com/preservim/nerdtree"
+  },
   ["nvim-autopairs"] = {
     loaded = true,
     path = "/Users/aaluiz/.local/share/nvim/site/pack/packer/start/nvim-autopairs",

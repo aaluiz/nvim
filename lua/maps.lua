@@ -1,6 +1,6 @@
 local keymap = vim.keymap
 
--- leader key space 
+-- leader key space
 vim.g.mapleader = ' '
 -- search term in all files  :nnoremap <leader>g :grep -R <cword> .<cr>
 keymap.set('n', '<leader>g', ':grep -R <cword> .<cr>')
@@ -72,3 +72,7 @@ keymap.set('n', '<F5>', ":lua require'dap'.continue()<cr>", { silent = true })
 keymap.set('n', '<F10>', ":lua require'dap'.step_over()<cr>", { silent = true })
 keymap.set('n', '<F11>', ":lua require'dap'.step_into()<cr>", { silent = true })
 keymap.set('n', '<F4>', ":lua require'dap'.terminate()<cr>", { silent = true })
+
+-- NerdTree
+keymap.set('n', '<leader>n', ':NERDTreeToggle<CR>', { silent = true })
+keymap.set('n', '<leader>f', ':NERDTreeFind<CR>', { silent = true })
