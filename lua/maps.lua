@@ -1,4 +1,5 @@
 local keymap = vim.keymap
+local opts = { noremap = true, silent = true }
 
 -- leader key space
 vim.g.mapleader = ' '
@@ -61,17 +62,12 @@ keymap.set('n', 'K', "<cmd>Lspsaga hover_doc<cr>", { silent = true, noremap = tr
 keymap.set('n', 'go', "<cmd>Lspsaga show_line_diagnostics<cr>", { silent = true, noremap = true })
 keymap.set('n', 'gj', "<cmd>Lspsaga diagnostic_jump_next<cr>", { silent = true, noremap = true })
 keymap.set('n', 'gk', "<cmd>Lspsaga diagnostic_jump_prev<cr>", { silent = true, noremap = true })
-keymap.set('n', 'gf', "<cmd>Lspsaga lsp_finder<cr>", { silent = true, noremap = true })
-keymap.set('n', '<C-u>', "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(-1, '<c-u>')<cr>", {})
-keymap.set('n', '<C-d>', "<cmd>lua require('lspsaga.action').smart_scroll_with_saga(1, '<c-d>')<cr>", {})
-keymap.set('n', "gd", "<cmd>Lspsaga peek_definition<CR>", { silent = true })
+keymap.set('n', 'gf', "<cmd>Lspsaga finder<cr>", { silent = true, noremap = true })
+keymap.set('n', 'gd', '<Cmd>Lspsaga peek_definition<CR>', opts)
+keymap.set('n', 'gr', '<Cmd>Lspsaga rename<CR>', opts)
+keymap.set('n', '<C-d>', "<cmd>Lspsaga term_toggle<cr>", { silent = true, noremap = true })
+keymap.set('t', '<C-d>', "<cmd>Lspsaga term_toggle<cr>", { silent = true, noremap = true })
 
--- Debug
-keymap.set('n', 'db', ":lua require'dap'.toggle_breakpoint()<cr>", { silent = true })
-keymap.set('n', '<F5>', ":lua require'dap'.continue()<cr>", { silent = true })
-keymap.set('n', '<F10>', ":lua require'dap'.step_over()<cr>", { silent = true })
-keymap.set('n', '<F11>', ":lua require'dap'.step_into()<cr>", { silent = true })
-keymap.set('n', '<F4>', ":lua require'dap'.terminate()<cr>", { silent = true })
 
 -- NerdTree
 keymap.set('n', '<leader>n', ':NERDTreeToggle<CR>', { silent = true })

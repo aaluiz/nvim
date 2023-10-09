@@ -4,13 +4,22 @@
   "eslint.packageManager": "yarn",
   "eslint.run": "onType",
   "eslint.autoFixOnSave": true,
-  "coc.preferences.formatOnSaveFiletypes": ["*"],
-  "coc.preferences.formatOnSaveFiletypes": ["css", "markdown", "html"],
-  "languageserver": {
-    "csharp-ls": {
-      "command": "csharp-ls",
-      "filetypes": ["cs"],
-      "rootPatterns": ["*.csproj", ".vim/", ".git/", ".hg/"]
-    }
-  }
-}
+  "coc.preferences.formatOnSaveFiletypes": [
+    "javascript",
+    "typescript",
+    "json",
+    "jsx",
+    "tsx",
+    "html",
+    "css",
+    "md",
+    "markdown"
+  ],
+ "languageserver": {
+        "angular": {
+            "command": "ngserver",
+            "args": ["--stdio", "--tsProbeLocations", "/Users/aaluiz/.nvm/versions/node/v16.20.2/lib/node_modules/typescript/lib", "--ngProbeLocations", "/Users/aaluiz/.nvm/versions/node/v16.20.2/lib/node_modules/@angular/language-server/bin"],
+            "filetypes": [ "ts", "typescript", "html", "typescriptreact", "typescript.tsx" ],
+            "trace.server.verbosity": "verbose"
+        }
+ }

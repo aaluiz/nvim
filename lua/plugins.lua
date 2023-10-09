@@ -48,10 +48,16 @@ packer.startup(function(use)
   use 'sbdchd/neoformat'
   use 'SirVer/ultisnips'
   use 'mlaursen/vim-react-snippets'
-  use 'glepnir/lspsaga.nvim'
   use 'kabouzeid/nvim-lspinstall'
   -- UI
   use 'preservim/nerdtree'
+  use ({
+    'nvimdev/lspsaga.nvim',
+    after = 'nvim-lspconfig',
+    config = function()
+        require('lspsaga').setup({})
+    end,
+  })
   -- Debugging
   use 'mfussenegger/nvim-dap'
   use 'folke/which-key.nvim'
@@ -59,4 +65,10 @@ packer.startup(function(use)
   use 'mfussenegger/nvim-dap-python'
   use 'leoluz/nvim-dap-go'
   use 'github/copilot.vim'
+  -- Markdown
+  use 'godlygeek/tabular'
+  use 'preservim/vim-markdown'
+  use { 'iamcco/markdown-preview.nvim', run = 'cd app && npm install' }
+  -- Prisma
+  use 'prisma/vim-prisma'
 end)
